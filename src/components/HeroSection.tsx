@@ -44,18 +44,12 @@ const HeroSection = () => {
           </div>
           
           <div className="relative">
-            {/* Decorative elements */}
-            <div className="absolute -top-8 -left-8 text-6xl opacity-30">🎯</div>
-            <div className="absolute -top-4 -right-4 text-4xl opacity-40">✨</div>
-            <div className="absolute -bottom-6 -left-6 text-5xl opacity-35">📚</div>
-            
-            <div className="relative bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl p-8">
-              <img 
-                src="/lovable-uploads/e418db3f-a5b2-41a6-bdbe-f2e733e58749.png" 
-                alt="Academic community helping each other" 
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
+            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl transform rotate-3"></div>
+            <img 
+              src={heroImage} 
+              alt="Academic community helping each other" 
+              className="relative rounded-3xl w-full h-auto shadow-2xl"
+            />
           </div>
         </div>
       </div>

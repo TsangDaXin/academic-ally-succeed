@@ -4,13 +4,9 @@ const Navigation = () => {
   return (
     <nav className="w-full bg-white/80 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
-            <img 
-              src="/lovable-uploads/bd61ad0f-0994-4b02-a1bf-754343f5612f.png" 
-              alt="PlsMightFail" 
-              className="w-full h-full object-contain"
-            />
+        <div className="flex items-center gap-2">
+          <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+            <span className="text-primary-foreground font-bold text-lg">P</span>
           </div>
           <span className="text-xl font-bold text-foreground">PlsMightFail</span>
         </div>
