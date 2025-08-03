@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'Montserrat', 'Nunito', 'Arial', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +64,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				academic: {
+					'blue-deep': 'hsl(var(--academic-blue-deep))',
+					'yellow': 'hsl(var(--academic-yellow))',
+					'purple': 'hsl(var(--academic-purple))',
+					'green': 'hsl(var(--academic-green))',
+					'soft-white': 'hsl(var(--academic-soft-white))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-soft': 'var(--gradient-soft)',
+				'gradient-hero': 'var(--gradient-hero)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
