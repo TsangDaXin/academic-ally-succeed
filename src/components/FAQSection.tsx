@@ -1,47 +1,45 @@
-import { HelpCircle, ChevronRight } from "lucide-react";
+import { HelpCircle } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const FAQSection = () => {
   const faqs = [
     "How does it work?",
-    "How is payment process?", 
+    "How is payment process?",
     "How to apply?",
     "What if there is a scam?",
     "Face any issues?"
   ];
 
   return (
-    <section className="py-16 px-6 bg-primary">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Questions? We've got you
-          </h2>
-          <div className="space-y-2">
-            <h3 className="text-2xl font-bold text-white">
-              Frequently <span className="text-yellow-400">asked</span>
-            </h3>
-            <h3 className="text-2xl font-bold text-white">questions</h3>
-          </div>
-          <p className="text-white/80 mt-6 max-w-md mx-auto">
-            If you don't find your answer here, feel free to reach out!
-          </p>
-        </div>
+    <section className="py-20 px-4 bg-primary">
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+          Questions? We've got you
+        </h2>
         
-        <div className="max-w-2xl mx-auto space-y-4">
+        <h3 className="text-2xl font-bold text-primary-foreground mb-2">
+          Frequently <span className="text-academic-yellow">asked</span>
+        </h3>
+        <h3 className="text-2xl font-bold text-primary-foreground mb-8">
+          questions
+        </h3>
+        
+        <p className="text-primary-foreground/80 mb-12 max-w-md mx-auto">
+          If you don't find your answer here, feel free to reached out!
+        </p>
+        
+        <div className="space-y-4 max-w-lg mx-auto">
           {faqs.map((faq, index) => (
-            <div
+            <Button
               key={index}
-              className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-colors cursor-pointer border border-white/20"
+              variant="secondary"
+              size="lg"
+              className="w-full justify-start bg-white/20 hover:bg-white/30 text-primary-foreground border-0 backdrop-blur-sm rounded-xl"
             >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <HelpCircle className="w-5 h-5 text-white" />
-                  <span className="text-white font-medium">{faq}</span>
-                </div>
-                <ChevronRight className="w-5 h-5 text-white/60" />
-              </div>
-            </div>
+              <HelpCircle className="w-5 h-5 mr-3" />
+              {faq}
+            </Button>
           ))}
         </div>
       </div>

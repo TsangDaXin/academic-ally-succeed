@@ -1,18 +1,26 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import WorksSection from "@/components/WorksSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import AssistanceSection from "@/components/AssistanceSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import AntiScamSection from "@/components/AntiScamSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import HelperCallToAction from "@/components/HelperCallToAction";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Navigation />
       <main>
         <HeroSection />
-        <FeaturesSection />
-        <WorksSection />
+        <WhyChooseSection />
+        <AssistanceSection />
+        <HowItWorksSection />
+        <AntiScamSection />
+        <ReviewsSection />
+        <HelperCallToAction />
         <FAQSection />
       </main>
       <Footer />
