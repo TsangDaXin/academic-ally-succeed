@@ -6,6 +6,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import AntiScamSection from "@/components/AntiScamSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import HelperCallToAction from "@/components/HelperCallToAction";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
         <AntiScamSection />
         <ReviewsSection />
         <HelperCallToAction />
+        <FAQSection />
       </main>
       <Footer />
     </div>

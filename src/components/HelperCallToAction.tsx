@@ -22,8 +22,13 @@ const HelperCallToAction = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto">
+    <section className="py-20 px-4 relative overflow-hidden">
+      {/* Decorative stars */}
+      <div className="absolute top-8 left-8 text-5xl text-academic-yellow opacity-60">⭐</div>
+      <div className="absolute top-16 right-12 text-4xl text-academic-yellow opacity-50">⭐</div>
+      <div className="absolute bottom-12 left-16 text-6xl text-academic-yellow opacity-40">⭐</div>
+      
+      <div className="container mx-auto relative z-10">
         <div className="bg-gradient-soft rounded-3xl p-12 relative overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-academic-yellow/10 rounded-full -translate-x-16 -translate-y-16"></div>
